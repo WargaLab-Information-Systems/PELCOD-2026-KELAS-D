@@ -1,0 +1,238 @@
+{
+  "version": "7.0",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "start",
+      "text": "Start",
+      "x": 26,
+      "y": 22,
+      "w": 150,
+      "h": 58
+    },
+    {
+      "id": 2,
+      "type": "input",
+      "text": "batas_bawah =1 ; batas_atas =3",
+      "x": 235,
+      "y": 16,
+      "w": 210,
+      "h": 70
+    },
+    {
+      "id": 3,
+      "type": "process",
+      "text": "angka = batas_bawah",
+      "x": 562,
+      "y": 16,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 4,
+      "type": "decision",
+      "text": "angka <= batas_atas",
+      "x": 591,
+      "y": 139,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 5,
+      "type": "decision",
+      "text": "angka > 1",
+      "x": 591,
+      "y": 340,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 6,
+      "type": "process",
+      "text": "apakah_prima = True; Z = 2",
+      "x": 577,
+      "y": 537,
+      "w": 150,
+      "h": 70
+    },
+    {
+      "id": 7,
+      "type": "decision",
+      "text": "Z * Z <= angka",
+      "x": 590,
+      "y": 655,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 8,
+      "type": "decision",
+      "text": "angka % Z == 0",
+      "x": 150,
+      "y": 950,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 9,
+      "type": "process",
+      "text": "apakah_prima = False",
+      "x": 136,
+      "y": 1201,
+      "w": 150,
+      "h": 70
+    },
+    {
+      "id": 10,
+      "type": "process",
+      "text": "Z = Z + 1",
+      "x": 778,
+      "y": 681,
+      "w": 150,
+      "h": 70
+    },
+    {
+      "id": 11,
+      "type": "decision",
+      "text": "apakah_prima == True",
+      "x": 590,
+      "y": 857,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 12,
+      "type": "process",
+      "text": "daftar_prima = angka + 1",
+      "x": 531,
+      "y": 1293,
+      "w": 240,
+      "h": 70
+    },
+    {
+      "id": 13,
+      "type": "process",
+      "text": "angka  = angka + 1",
+      "x": 148,
+      "y": 165,
+      "w": 150,
+      "h": 70
+    },
+    {
+      "id": 14,
+      "type": "output",
+      "text": "daftar_prima, angka",
+      "x": 851,
+      "y": 165,
+      "w": 220,
+      "h": 70
+    },
+    {
+      "id": 15,
+      "type": "end",
+      "text": "End",
+      "x": 1119,
+      "y": 170,
+      "w": 150,
+      "h": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 2,
+      "branch": null
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "branch": null
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "branch": null
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "branch": "true"
+    },
+    {
+      "from": 4,
+      "to": 14,
+      "branch": "false"
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "branch": "true"
+    },
+    {
+      "from": 5,
+      "to": 13,
+      "branch": "false"
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "branch": null
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "branch": "true"
+    },
+    {
+      "from": 7,
+      "to": 11,
+      "branch": "false"
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "branch": "true"
+    },
+    {
+      "from": 8,
+      "to": 10,
+      "branch": "false"
+    },
+    {
+      "from": 9,
+      "to": 11,
+      "branch": null
+    },
+    {
+      "from": 10,
+      "to": 7,
+      "branch": null
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "branch": "true"
+    },
+    {
+      "from": 11,
+      "to": 13,
+      "branch": "false"
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "branch": null
+    },
+    {
+      "from": 13,
+      "to": 4,
+      "branch": null
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "branch": null
+    }
+  ],
+  "nextId": 16
+}
