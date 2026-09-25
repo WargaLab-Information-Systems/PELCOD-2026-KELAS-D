@@ -1,4 +1,4 @@
-# Sistem Penilaian Peserta Pelatihan Coding
+# Sistem Penilaian Pelatihan Coding
 
 | ---------------------- | --------------------------------- |
 | **Nama**               | Airin Afifah                      |
@@ -12,15 +12,15 @@
 Program ini merupakan program Python sederhana yang digunakan untuk menentukan hasil penilaian dan status kelulusan seorang peserta.
 
 Program menerima beberapa data dari pengguna, yaitu:
-Nama peserta
-Nilai tugas
-Nilai kuis
-Nilai ujian
-Persentase kehadiran
+-Nama peserta
+-Nilai tugas
+-Nilai kuis
+-Nilai ujian
+-Persentase kehadiran
 
 Setelah data dimasukkan, program menghitung nilai akhir berdasarkan bobot nilai tugas, kuis, dan ujian. Selanjutnya, program menentukan status kelulusan peserta berdasarkan nilai akhir dan persentase kehadiran.
 
-### Bobot Nilai
+### ⚖️ Bobot Nilai
 
 | Komponen    | Bobot |
 | ----------- | ----: |
@@ -28,7 +28,7 @@ Setelah data dimasukkan, program menghitung nilai akhir berdasarkan bobot nilai 
 | Nilai Kuis  |   20% |
 | Nilai Ujian |   50% |
 
-### 🎓 Kriteria Kelulusan
+### Kriteria Kelulusan
 
 | Kondisi                              | Status      |
 | ------------------------------------ | ----------- |
@@ -38,7 +38,7 @@ Setelah data dimasukkan, program menghitung nilai akhir berdasarkan bobot nilai 
 | Kehadiran < 75%                      | Tidak Lulus |
 | Kondisi lainnya                      | Tidak Lulus |
 
-### Cara Kerja Program
+## Cara Kerja Program
 
 1. Memasukkan Nama Peserta
 nama = input("nama peserta : ")
@@ -69,24 +69,29 @@ Program meminta persentase kehadiran peserta dan menyimpannya dalam variabel keh
 nilai_akhir = (nilai_tugas * 0.30) + (nilai_kuis * 0.20) + (nilai_ujian * 0.50)
 
 Nilai akhir dihitung menggunakan bobot yang sudah ditentukan.
+
 Nilai tugas dikalikan 0.30, nilai kuis dikalikan 0.20, dan nilai ujian dikalikan 0.50. Kemudian ketiga hasil tersebut dijumlahkan.
 
-Rumusnya : Nilai Akhir = (Nilai Tugas × 30%) + (Nilai Kuis × 20%) + (Nilai Ujian × 50%)
+Rumusnya:
+
+Nilai Akhir = (Nilai Tugas × 30%) + (Nilai Kuis × 20%) + (Nilai Ujian × 50%)
 
 7. Mengecek Kehadiran
 if kehadiran < 75:
     status = "Tidak Lulus"
 
 Kondisi pertama mengecek apakah kehadiran kurang dari 75%.
+
 Jika benar, status peserta langsung menjadi Tidak Lulus.
 
 8. Menentukan Predikat A
 elif nilai_akhir >= 85 and kehadiran >= 80:
-    status = "enih kewren bangetsss dapet nilai A"
+    status = "inih kewren bangetsss dapet nilai A"
 
 Jika kondisi sebelumnya tidak terpenuhi, program mengecek kondisi ini.
 
 Peserta mendapatkan status A jika:
+
 Nilai akhir minimal 85
 Kehadiran minimal 80%
 
@@ -97,6 +102,7 @@ elif nilai_akhir >= 75 and kehadiran >= 80:
     status = "horeww  lulus nilai B"
 
 Peserta mendapatkan status B jika:
+
 Nilai akhir minimal 75
 Kehadiran minimal 80%
 
@@ -107,17 +113,29 @@ elif nilai_akhir >= 65 and kehadiran >= 75:
     status = "ini juga kewren kok nilai C"
 
 Peserta mendapatkan status C jika:
+
 Nilai akhir minimal 65
 Kehadiran minimal 75%
-
 11. Kondisi Selain Itu
 else:
     status = "Tidak Lulus"
 
 else dijalankan jika semua kondisi sebelumnya tidak terpenuhi.
+
 Artinya, peserta tidak memenuhi persyaratan untuk mendapatkan predikat A, B, atau C.
 
-### Contoh Output
+12. Menampilkan Hasil
+print("hasil penilaian")
+print("Nama :", nama)
+print("Nilai Akhir :", nilai_akhir)
+print("Kehadiran :", str(kehadiran) + "%")
+print("Status :", status)
+
+Bagian ini digunakan untuk menampilkan hasil program.
+
+str(kehadiran) digunakan untuk mengubah nilai kehadiran menjadi teks sehingga dapat digabungkan dengan simbol %.
+
+## Contoh Output
 
 nama peserta : Airin Afifah
 nilai tugas : 90
@@ -129,7 +147,7 @@ hasil penilaian
 Nama : Airin Afifah
 Nilai Akhir : 89.0
 Kehadiran : 90.0%
-Status : enih kewren bangetsss dapet nilai A
+Status : inih kewren bangetsss dapet nilai A
 
 ## Konsep Python yang Digunakan
 
