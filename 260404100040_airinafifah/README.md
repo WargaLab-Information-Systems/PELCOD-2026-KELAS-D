@@ -12,7 +12,6 @@
 Program ini merupakan program Python sederhana yang digunakan untuk menentukan hasil penilaian dan status kelulusan seorang peserta.
 
 Program menerima beberapa data dari pengguna, yaitu:
-
 Nama peserta
 Nilai tugas
 Nilai kuis
