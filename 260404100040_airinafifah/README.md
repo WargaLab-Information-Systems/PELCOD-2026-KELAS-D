@@ -70,7 +70,6 @@ Program meminta persentase kehadiran peserta dan menyimpannya dalam variabel keh
 nilai_akhir = (nilai_tugas * 0.30) + (nilai_kuis * 0.20) + (nilai_ujian * 0.50)
 
 Nilai akhir dihitung menggunakan bobot yang sudah ditentukan.
-
 Nilai tugas dikalikan 0.30, nilai kuis dikalikan 0.20, dan nilai ujian dikalikan 0.50. Kemudian ketiga hasil tersebut dijumlahkan.
 
 Rumusnya : Nilai Akhir = (Nilai Tugas × 30%) + (Nilai Kuis × 20%) + (Nilai Ujian × 50%)
@@ -80,7 +79,6 @@ if kehadiran < 75:
     status = "Tidak Lulus"
 
 Kondisi pertama mengecek apakah kehadiran kurang dari 75%.
-
 Jika benar, status peserta langsung menjadi Tidak Lulus.
 
 8. Menentukan Predikat A
@@ -90,7 +88,6 @@ elif nilai_akhir >= 85 and kehadiran >= 80:
 Jika kondisi sebelumnya tidak terpenuhi, program mengecek kondisi ini.
 
 Peserta mendapatkan status A jika:
-
 Nilai akhir minimal 85
 Kehadiran minimal 80%
 
@@ -101,7 +98,6 @@ elif nilai_akhir >= 75 and kehadiran >= 80:
     status = "horeww  lulus nilai B"
 
 Peserta mendapatkan status B jika:
-
 Nilai akhir minimal 75
 Kehadiran minimal 80%
 
@@ -112,15 +108,14 @@ elif nilai_akhir >= 65 and kehadiran >= 75:
     status = "ini juga kewren kok nilai C"
 
 Peserta mendapatkan status C jika:
-
 Nilai akhir minimal 65
 Kehadiran minimal 75%
+
 11. Kondisi Selain Itu
 else:
     status = "Tidak Lulus"
 
 else dijalankan jika semua kondisi sebelumnya tidak terpenuhi.
-
 Artinya, peserta tidak memenuhi persyaratan untuk mendapatkan predikat A, B, atau C.
 
 ### Contoh Output
